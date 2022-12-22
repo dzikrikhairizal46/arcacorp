@@ -1,0 +1,1006 @@
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+
+
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+
+
+/*
+* Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block
+}
+
+
+/*
+* Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+
+/*
+* Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+
+/*
+* Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
+* Known issue:no IE 6 support.
+*/
+
+[hidden] {
+    display: none
+}
+
+
+/* ==========================================================================
+Base
+========================================================================== */
+
+
+/*
+* 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+    font-size: 100%;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+}
+
+
+/*
+* Addresses `font-family` inconsistency between `textarea` and other form
+* elements.
+*/
+
+html, button, input, select, textarea {
+    font-family: 'Whitney-Medium', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+/*
+* Addresses margins handled incorrectly in IE 6/7.
+*/
+
+body {
+    margin: 0;
+    font-family: 'Whitney-Medium', sans-serif;
+}
+
+
+/*
+* Font Smoothing
+*/
+
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ==========================================================================
+Links
+========================================================================== */
+
+
+/*
+* Addresses `outline` inconsistency between Chrome and other browsers.
+*/
+
+a:focus {
+    outline: thin dotted;
+    text-decoration: none;
+}
+
+
+/*
+* Improves readability when focused and also mouse hovered in all browsers.
+*/
+
+a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+Typography
+========================================================================== */
+
+
+/*
+* Addresses font sizes and margins set differently in IE 6/7.
+* Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
+*/
+
+h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0.83em 0;
+    font-size: 1.5em;
+}
+
+h3 {
+    margin: 1em 0;
+    font-size: 1.17em;
+}
+
+h4 {
+    margin: 1.33em 0;
+    font-size: 1em;
+}
+
+h5 {
+    margin: 1.67em 0;
+    font-size: 0.83em;
+}
+
+h6 {
+    margin: 2.33em 0;
+    font-size: 0.75em;
+}
+
+
+/*
+* Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+
+/*
+* Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+
+b, strong {
+    font-weight: bold
+}
+
+blockquote {
+    margin: 0px
+}
+
+
+/*
+* Addresses styling not present in Safari 5 and Chrome.
+*/
+
+dfn {
+    font-style: italic
+}
+
+
+/*
+* Addresses styling not present in IE 6/7/8/9.
+*/
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+
+p, pre {
+    margin: 1em 0
+}
+
+
+/*
+* Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+*/
+
+code, kbd, pre, samp {
+    font-size: 1em;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+}
+
+
+/*
+* Improves readability of pre-formatted text in all browsers.
+*/
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+/*
+* Addresses CSS quotes not supported in IE 6/7.
+*/
+
+q {
+    quotes: none
+}
+
+
+/*
+* Addresses `quotes` property not supported in Safari 4.
+*/
+
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%
+}
+
+
+/*
+* Prevents `sub` and `sup` affecting `line-height` in all browsers.
+*/
+
+sub, sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+
+/* ==========================================================================
+Lists
+========================================================================== */
+
+
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+
+dl, menu, ol, ul {
+    margin: 1em 0
+}
+
+dd {
+    margin: 0 0 0 40px
+}
+
+
+/*
+* Addresses paddings set differently in IE 6/7.
+*/
+
+menu, ol, ul {
+    padding: 0
+}
+
+
+/*
+* Corrects list images handled incorrectly in IE 7.
+*/
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* ==========================================================================
+Embedded content
+========================================================================== */
+
+
+/*
+* 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+* 2. Improves image quality when scaled in IE 7.
+*/
+
+img {
+    border: 0;
+    /* 1 */
+    -ms-interpolation-mode: bicubic;
+    /* 2 */
+}
+
+
+/*
+* Corrects overflow displayed oddly in IE 9.
+*/
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+
+/* ==========================================================================
+Figures
+========================================================================== */
+
+
+/*
+* Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+*/
+
+figure {
+    margin: 0
+}
+
+
+/* ==========================================================================
+Forms
+========================================================================== */
+
+
+/*
+* Corrects margin displayed oddly in IE 6/7.
+*/
+
+form {
+    margin: 0
+}
+
+
+/*
+* Define consistent border, margin, and padding.
+*/
+
+fieldset {
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+}
+
+
+/*
+* 1. Corrects color not being inherited in IE 6/7/8/9.
+* 2. Corrects text not wrapping in Firefox 3.
+* 3. Corrects alignment displayed oddly in IE 6/7.
+*/
+
+legend {
+    padding: 0;
+    border: 0;
+    /* 1 */
+    white-space: normal;
+    /* 2 */
+    *margin-left: -7px;
+    /* 3 */
+}
+
+
+/*
+* 1. Corrects font size not being inherited in all browsers.
+* 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
+* 3. Improves appearance and consistency in all browsers.
+*/
+
+button, input, select, textarea {
+    margin: 0;
+    /* 2 */
+    vertical-align: baseline;
+    /* 3 */
+    font-size: 100%;
+    /* 1 */
+    *vertical-align: middle;
+    /* 3 */
+}
+
+
+/*
+* Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
+* the UA stylesheet.
+*/
+
+button, input {
+    line-height: normal
+}
+
+
+/*
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Corrects inability to style clickable `input` types in iOS.
+* 3. Improves usability and consistency of cursor style between image-type
+*    `input` and others.
+* 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+*    Known issue:inner spacing remains in IE 6.
+*/
+
+button, html input[type="button"],
+/* 1 */
+
+input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    /* 3 */
+    -webkit-appearance: button;
+    /* 2 */
+    *overflow: visible;
+    /* 4 */
+}
+
+
+/*
+* Re-set default cursor for disabled elements.
+*/
+
+button[disabled], input[disabled] {
+    cursor: default
+}
+
+
+/*
+* 1. Addresses box sizing set to content-box in IE 8/9.
+* 2. Removes excess padding in IE 8/9.
+* 3. Removes excess padding in IE 7.
+*    Known issue:excess padding remains in IE 6.
+*/
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+    *height: 13px;
+    /* 3 */
+    *width: 13px;
+    /* 3 */
+}
+
+
+/*
+* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+*    (include `-moz` to future-proof).
+*/
+
+input[type="search"] {
+    /* 2 */
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    /* 1 */
+    nowhitespace: afterproperty;
+}
+
+
+/*
+* Removes inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+
+/*
+* Removes inner padding and border in Firefox 3+.
+*/
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+/*
+* 1. Removes default vertical scrollbar in IE 6/7/8/9.
+* 2. Improves readability and alignment in all browsers.
+*/
+
+textarea {
+    overflow: auto;
+    /* 1 */
+    vertical-align: top;
+    /* 2 */
+}
+
+
+/* ==========================================================================
+Tables
+========================================================================== */
+
+
+/*
+* Remove most spacing between table cells.
+*/
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+}
+
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+a {
+    color: #73d0da
+}
+
+a:hover, a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+
+.mail-btn {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #4b98a9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mail-btn:hover, .mail-btn:focus {
+    background-color: #73d0da;
+    color: #fff;
+    text-decoration: none;
+}
+
+.learn-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 2px solid #b00;
+    border-radius: 3px;
+    color: #b00;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.learn-btn:hover, .learn-btn:focus {
+    border-color: #b00;
+    background-color: #b00;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+Banner
+========================================================================== */
+
+.banner {
+    padding: 60px 0 60px 0;
+    min-height: 800px;
+    background-image: url("../img/hero-01.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.banner h1 {
+    margin: 30px 0px 8px 0px;
+    font-weight: 500;
+    font-size: 33px;
+    color: #000;
+    line-height: 43px;
+    font-family: 'Whitney-Light', sans-serif;
+}
+
+.banner .text1 {
+    font-size: 23px;
+    line-height: 33px;
+    color: #111;
+    font-weight: 500;
+    font-family: 'Whitney-Light', sans-serif;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+header i {
+    margin-left: 5px
+}
+
+.transp {
+    margin-top: 70px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ==========================================================================
+Products List
+========================================================================== */
+
+.products-list {
+    padding: 50px 0
+}
+
+.products-list .h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+.products-logo {
+    color: #000;
+    font-size: 36px;
+    margin: 0 10px 40px;
+}
+
+.products-list p {
+    margin: 10 20px 20px;
+    color: #333;
+    font-size: 12pt;
+    line-height: 22px;
+    padding: 0px 30px 0px 30px;
+}
+
+.products-content {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.img-responsive {
+    display: inline !important;
+}
+
+.logo-container {
+    height: 65px;
+}
+
+
+/* ==========================================================================
+Testimonial
+========================================================================== */
+
+.testimonial {
+    padding: 50px 0 70px;
+    background-color: #1b1b1e;
+    color: #fff;
+}
+
+.testimonial .h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.testimoni-logo {
+    font-size: 40px;
+    margin: 0 10px 20px;
+}
+
+.testimoni-quote p {
+    font-style: italic;
+    margin-top: 20px;
+    padding: 0 100px;
+    font-size: 12pt;
+    line-height: 22px;
+}
+
+.testimoni-quote span {
+    font-size: 12pt;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.carousel-cell:before {
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+/* ==========================================================================
+Awards
+========================================================================== */
+
+.awards {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.awards .h1 {
+    color: #000;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.awards .h2 {
+    /*color:#333;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Whitney-Light', sans-serif;
+    */
+    font-size: 23px;
+    line-height: 33px;
+    color: #111;
+    font-weight: 500;
+    font-family: 'Whitney-Light', sans-serif;
+}
+
+.awards-logo {
+    color: #000;
+    font-size: 36px;
+    margin: 0 10px 20px;
+}
+
+.awards-img {
+    margin-top: 10px !important;
+}
+
+
+/* ==========================================================================
+Clients
+========================================================================== */
+
+.clients {
+    padding: 70px 0;
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.clients .h1 {
+    color: #000;
+    opacity: .7;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.clients-logo {
+    color: #000;
+    opacity: .7;
+    font-size: 36px;
+    margin: 0 10px 20px;
+}
+
+.clients-img {
+    opacity: .7;
+}
+
+.clients-head {
+  padding-bottom: 10px;
+}
+
+/* ==========================================================================
+Contact
+========================================================================== */
+
+.contact {
+    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact .h1 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.contact-logo {
+    color: #fff;
+    font-size: 37px;
+    margin: 0 10px 20px;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 15px 0 10px !important;
+}
+
+.contact-wrap {
+    position: relative;
+    padding: 50px 0;
+    min-height: 600px;
+}
+
+.contact-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact a {
+    color: #1B2432;
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+footer {}
+
+footer p {
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    color: #b00;
+}
+
+
+/* ==========================================================================
+Waypoints
+========================================================================== */
+
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7 {
+    visibility: hidden
+}
+
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+    visibility: visible
+}
+
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay-1_5s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+
+/* ==========================================================================
+Queries
+========================================================================== */
+
+@media screen and (max-width:415px) {
+    .banner h1 {
+        font-size: 16pt;
+        line-height: 30px;
+        margin: 20px 10px 5px 10px;
+    }
+    .banner .text1 {
+        font-size: 14pt;
+        line-height: 20px;
+        color: #262626;
+    }
+    .testimoni-quote p {
+        font-size: 9pt;
+        line-height: 15px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .testimoni-quote span {
+        font-size: 10pt;
+    }
+    .awards-img {
+        margin-top: 20px;
+    }
+    .logo-container {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .odd-img {
+        text-align: right;
+        padding-right: 5px !important;
+        padding-left: 10px !important;
+    }
+    .even-img {
+        text-align: left;
+        padding-left: 5px !important;
+        padding-right: 10px !important;
+    }
+}
+
+@media screen and (max-width:356px) {
+    .carousel-cell {
+        height: 250px;
+    }
+}
+
+
+/* ==========================================================================
+Cutom
+========================================================================== */

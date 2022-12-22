@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Whitney-Light';
+	src: url('fonts/whitney_light/Whitney-Light.eot');
+	src: url('fonts/whitney_light/Whitney-Light.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/whitney_light/Whitney-Light.woff') format('woff'),
+		 url('fonts/whitney_light/Whitney-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Whitney-Medium';
+	src: url('fonts/whitney_medium/Whitney-Medium.eot');
+	src: url('fonts/whitney_medium/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/whitney_medium/Whitney-Medium.woff') format('woff'),
+		 url('fonts/whitney_medium/Whitney-Medium.ttf') format('truetype'),
+		 url('fonts/whitney_medium/Whitney-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Whitney-Book';
+	src: url('fonts/whitney_book/Whitney-Book.eot');
+	src: url('fonts/whitney_book/Whitney-Book.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/whitney_book/Whitney-Book.woff') format('woff'),
+		 url('fonts/whitney_book/Whitney-Book.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
